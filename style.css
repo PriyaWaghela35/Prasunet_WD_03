@@ -1,0 +1,114 @@
+body {
+    background-color: #2c3e50; /* Dark background */
+    color: white;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #ff4757; /* Vibrant red for heading */
+    margin-bottom: 20px;
+}
+
+p#ins {
+    font-size: 18px;
+    color: #bdc3c7; /* Light gray instructions */
+}
+
+.ui {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #34495e; /* Darker cell background */
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #2c3e50; /* Border matching background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #16a085; /* Hover color */
+}
+
+.cell:disabled {
+    background-color: #34495e;
+    cursor: not-allowed;
+}
+.last{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+button#but {
+    background-color: #e74c3c; /* Red reset button */
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+button#but:hover {
+    background-color: #c0392b;
+}
+
+p#print {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #ecf0f1; /* Light color for status */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#turnIndicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#turnIndicator div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 5px;
+    border-radius: 8px;
+    color: white;
+}
+
+#turnX {
+    background-color: #3498db; /* Blue for X */
+}
+
+#turnO {
+    background-color: #e74c3c; /* Red for O */
+}
